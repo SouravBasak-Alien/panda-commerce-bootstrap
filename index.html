@@ -5,17 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Panda</title>
   <link rel="stylesheet" href="style.css">
   <!-- bootstarp file -->
   <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
 </head>
 
 <body>
-  <header class="container">
+  <header class="container" id="home">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="#" srcset=""></a>
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="#" srcset=""></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,31 +24,31 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shoes</a>
+              <a class="nav-link" href="#shoes">Shoes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Backpack</a>
+              <a class="nav-link" href="#Backpack">Backpack</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Subscribe</a>
+              <a class="nav-link" href="#Subscribe">Subscribe</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <div>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+      <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner slide-show">
           <div class="carousel-item active">
             <div class="row d-flex align-items-center p-5">
               <div class="col-md-7">
                 <h1>Mega LCD TV For Sports</h1>
                 <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
-                <h3>$1200</h3>
-                <button class="btn bg-warning text-white">Buy Now</button>
+                <h3 class="price">$1200</h3>
+                <button class="btn bg-warning text-white button">Buy Now</button>
               </div>
               <div class="col-md-5">
                 <img src="images/banner-images/tv.png" class="d-block w-100 " alt="...">
@@ -60,8 +60,8 @@
               <div class="col-md-7">
                 <h1>Cool Dude Headphone</h1>
                 <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
-                <h3>$420</h3>
-                <button class="btn bg-warning text-white">Buy Now</button>
+                <h3 class="price">$420</h3>
+                <button class="btn bg-warning text-white button">Buy Now</button>
               </div>
               <div class="col-md-5">
                 <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
@@ -73,8 +73,8 @@
               <div class="col-md-7">
                 <h1>X-Box for your living room</h1>
                 <p>This is the best x-box in the world for people who just want to waste time in front of fake sports.</p>
-                <h3>$600</h3>
-                <button class="btn bg-warning text-white">Buy Now</button>
+                <h3 class="price">$600</h3>
+                <button class="btn bg-warning text-white button">Buy Now</button>
 
 
               </div>
@@ -100,28 +100,28 @@
   </header>
   <main class="container">
     <section class="container px-4 mt-5">
-      <div class="row g-5">
+      <div class="row g-5 categories">
         <div class="col-lg-4 col-md-6">
-          <div class="p-3 border bg-warning rounded d-flex align-items-center justify-content-around">
+          <div class="p-3 border watch-bg d-flex align-items-center justify-content-around">
             <h1 class="text-white">Watch</h1>
-            <img class="w-25" src="images/categories/watch.png" alt="#">
+            <img  src="images/categories/watch.png" alt="#">
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="p-3 border bg-success rounded d-flex align-items-center justify-content-around">
+          <div class="p-3 border bag-bg d-flex align-items-center justify-content-around">
             <h1 class="text-white">Bag</h1>
-            <img class="w-25" src="images/categories/bag.png" alt="#">
+            <img  src="images/categories/bag.png" alt="#">
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="p-3 border bg-info rounded d-flex align-items-center justify-content-around">
+          <div class="p-3 border shoes d-flex align-items-center justify-content-around">
             <h1 class="text-white">Shoes</h1>
-            <img class="w-25" src="images/categories/shoes.png" alt="#">
+            <img  src="images/categories/shoes.png" alt="#">
           </div>
         </div>
       </div>
     </section>
-    <section class="mt-5">
+    <section class="mt-5" id="shoes">
       <h1>Shoes</h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
@@ -132,7 +132,7 @@
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.
               </p>
               <h5>$120</h5>
-              <button class="btn bg-info">Buy Now > ></button>
+              <button class="btn button text-white">Buy Now > ></button>
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@
               <h5 class="card-title">Nike 360</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
               <h5>$320</h5>
-              <button class="btn bg-info">Buy Now > ></button>
+              <button class="btn button text-white">Buy Now > ></button>
             </div>
           </div>
         </div>
@@ -155,13 +155,13 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional.
               </p>
               <h5>$350</h5>
-              <button class="btn bg-info">Buy Now > ></button>
+              <button class="btn button text-white">Buy Now > ></button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="mt-5">
+    <section class="mt-5" id="Backpack">
       <h1>Backpack</h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
@@ -174,8 +174,8 @@
                 content. This content is a little bit longer.</p>            
               
             </div>
-            <div class="card-footer">
-              <button class="btn bg-info">Buy Now > ></button>
+            <div class="card-footer bag-footer">
+              <button class="btn button text-white">Buy Now > ></button>
             </div>
           </div>
         </div>
@@ -187,8 +187,8 @@
               <h5>$320</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             </div>
-            <div class="card-footer">
-              <button class="btn bg-info">Buy Now > ></button>
+            <div class="card-footer bag-footer">
+              <button class="btn button text-white">Buy Now > ></button>
             </div>
           </div>
         </div>
@@ -201,20 +201,20 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This card has even longer content than the first to show that equal height action.</p>
             </div>
-            <div class="card-footer">
-              <button class="btn bg-info">Buy Now > ></button>
+            <div class="card-footer bag-footer">
+              <button class="btn button text-white">Buy Now > ></button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section style="height: 300px;" class="d-flex bg-info justify-content-center align-items-center mt-5">
+    <section style="height: 300px;" class="d-flex bg-info justify-content-center align-items-center mt-5" id="Subscribe">
       <div>
         <h1>LET'S STAY IN TOUCH</h1>
         <h6>Get updates on sales, specials and more</h6>
         <input type="text" class="w-50" placeholder="enter your email address">
         <div class="mt-2">
-          <button class="btn bg-warning rounded-3">SUBMIT</button>
+          <button class="btn button text-white">SUBMIT</button>
         </div>
         
       </div>
